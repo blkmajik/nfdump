@@ -681,7 +681,7 @@ void flow_record_to_json(FILE *stream, void *record, int tag, const char *ws, co
     master_record_t *r = (master_record_t *)record;
 
     if (recordCount) {
-        fprintf(stream, "%s", fs);
+        fprintf(stream, "%s", rs);
     }
     recordCount++;
 
