@@ -38,7 +38,7 @@ typedef void (*RecordPrinter_t)(FILE *, void *, int);
 typedef void (*PrologPrinter_t)(void);
 typedef void (*EpilogPrinter_t)(void);
 
-enum { MODE_PLAIN = 0, MODE_PIPE, MODE_JSON, MODE_CSV };
+enum { MODE_PLAIN = 0, MODE_PIPE, MODE_JSON, MODE_CSV, MODE_JSON_LOG };
 typedef struct outputParams_s {
     bool printPlain;
     bool doTag;
