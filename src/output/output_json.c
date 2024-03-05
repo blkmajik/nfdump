@@ -804,9 +804,9 @@ void flow_record_to_json(FILE *stream, void *record, int tag, const char *ws, co
 
     // add label and close json object
     fprintf(stream,
-            "%s\"label\" : \"%s\"%s"
+            "%s\"label\" : \"%s\""
             "}",
-            indent, r->label ? r->label : "<none>", fs);
+            indent, r->label ? r->label : "<none>");
 
 }  // End of flow_record_to_json
 
