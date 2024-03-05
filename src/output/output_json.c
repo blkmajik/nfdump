@@ -687,9 +687,9 @@ void flow_record_to_json(FILE *stream, void *record, int tag, const char *ws, co
 
     fprintf(stream,
             "{%s"
-            "%s\"type\" : \"%s\",\n"
-            "%s\"sampled\" : %u,\n"
-            "%s\"export_sysid\" : %u,\n",
+            "%s\"type\" : \"%s\"%s"
+            "%s\"sampled\" : %u%s"
+            "%s\"export_sysid\" : %u%s",
             ws,
             indent, TestFlag(r->flags, V3_FLAG_EVENT) ? "EVENT" : "FLOW", fs,
             indent, TestFlag(r->flags, V3_FLAG_SAMPLED) ? 1 : 0, fs,
